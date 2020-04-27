@@ -1,5 +1,5 @@
 # MSG_Sockets
- simple messageing server/client in c++ (c)
+ Simple messaging server/client in c++ (c)
 
 Based on [this](https://www.geeksforgeeks.org/tcp-server-client-implementation-in-c/)
 
