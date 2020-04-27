@@ -33,7 +33,7 @@ void communicate(int sockfd) {
 
     write(sockfd, buffer, sizeof(buffer)); // send message to client
 
-    if (strncmp("exit", buffer, 4) == 0) {
+    if (strncmp(buffer, "exit", 4) == 0) {
       printf("Server Exit...\n");
       break;
     }
