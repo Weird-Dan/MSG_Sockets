@@ -3,15 +3,10 @@
 
 Based on [this](https://www.geeksforgeeks.org/tcp-server-client-implementation-in-c/)
 
----
-
 Should work on Unix systems. Tested on macOS.
-
----
 
 ## Build and run
 
----
 
 With GCC compile:
 ```
