@@ -83,7 +83,7 @@ struct sockaddr_in construct_socket_address(int ip, int port) {
 
 */
 void connect_to_server(int server_fd, struct sockaddr_in address) {
-  int success = connect(server_fd, (struct sockaddr*)&address, sizeof(address));
+  int success = connect(server_fd, (struct sockaddr *) &address, sizeof(address));
 
   if (success != 0) {
     break_error("Connection with the server failed...\n");

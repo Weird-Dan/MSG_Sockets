@@ -8,7 +8,6 @@
 #include <sys/socket.h>
 #include <sys/types.h>
 
-
 #define MAX 80
 #define PORT 8080
 
@@ -83,7 +82,7 @@ struct sockaddr_in construct_socket_address(int ip, int port) {
 
 */
 void bind_socket(int bs_socket, struct sockaddr_in address) {
-  int success = bind(bs_socket, (struct sockaddr *)&address, sizeof(address));
+  int success = bind(bs_socket, (struct sockaddr *) &address, sizeof(address));
 
   if (success != 0) {
     break_error("Socket bind failed...\n");
